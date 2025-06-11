@@ -9,16 +9,16 @@ pipeline{
         
         stage('terraform init'){
             steps{
-                dir('terraform'){
+                
                     sh 'terraform init'
-                }
+                
             }
         }
         stage("terraform Apply"){
             steps{
-                dir('terraform'){
+                
                     sh 'terraform apply'
-                }
+                
             }
         }
     }
